@@ -11,7 +11,7 @@
 
         ___htmlUpdate()
         {
-            HTMLElement.prototype.addClassName = function(classes)
+            HTMLElement.prototype.AddClassName = function(classes)
             {
                 let arr = classes.trim().split(" ");
 
@@ -23,7 +23,14 @@
                 return this;
             }
 
-            HTMLElement.prototype.appendChilds = function(...childs)
+            HTMLElement.prototype.AddId = function(id)
+            {
+                let result = id.trim();
+                this.id = result;
+                return this;
+            }
+
+            HTMLElement.prototype.AppendChilds = function(...childs)
             {
                 for (let i = 0; i < childs.length; i++)
                 {
@@ -41,19 +48,19 @@
                 return this;
             }
 
-            HTMLElement.prototype.fill = function(data)
+            HTMLElement.prototype.Fill = function(data)
             {
                 this.innerHTML = data;
                 return this;
             }
 
-            HTMLImageElement.prototype.setSrc = function(url)
+            HTMLImageElement.prototype.SetSrc = function(url)
             {
                 this.setAttribute('src', url);
                 return this;
             }
 
-            HTMLImageElement.prototype.setSize = function(w, h)
+            HTMLImageElement.prototype.SetSize = function(w, h)
             {
                 if (w) this.width = w;
                 if (h) this.height = h;
@@ -61,12 +68,12 @@
             }
         }
 
-        create(element)
+        Create(element)
         {
             return this.document.createElement(element)
         }
 
-        find(selector)
+        Find(selector)
         {
             return this.document.querySelectorAll(selector).length > 1 ?  this.document.querySelectorAll(selector) : this.document.querySelectorAll(selector)[0];
         }
@@ -74,24 +81,5 @@
     }
 
     window.hb = new HtmlBuilder();
-
-    // document.body.appendChild(
-    //     hb.create('div').addClassName('container app test').appendChilds(
-
-    //         hb.create('div').addClassName('row header').appendChild(
-    //             hb.create('div').addClassName('col-6 logo').appendChild(
-    //                 hb.create('img').setAttribute('src', 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png')
-    //             )
-    //         ),
-
-    //         hb.create('div').addClassName('row content').appendChilds(
-    //             hb.create('div').addClassName('col-12').fill('some content')
-    //         ),
-
-    //         hb.create('div').addClassName('row footer').appendChilds(
-    //             hb.create('div').addClassName('col-12').fill(new Date())
-    //         )
-    //     )
-    // )
 
 }());
