@@ -54,6 +54,14 @@
                 return this;
             }
 
+            HTMLElement.prototype.AddEventListener = function(eventType, callback)
+            {
+                this.addEventListener(eventType, e => {
+                    callback(e);
+                });
+                return this;
+            }
+
             HTMLImageElement.prototype.SetSrc = function(url)
             {
                 this.setAttribute('src', url);

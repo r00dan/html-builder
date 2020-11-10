@@ -10,5 +10,6 @@ Global variable `window.hb`.
 | `AddId()` | Add an id to HTML element. |
 | `AppendChilds()` | Append a bunch of HTML elements. |
 | `Fill()` | Fill HTML element with some text. |
-| `SetSrc()` | Set src attribute to `HTMLImageElement` |
-| `SetSize()` | Set width and height to `HTMLImageElement` |
+| `SetSrc()` | Set src attribute to `HTMLImageElement`. |
+| `SetSize()` | Set width and height to `HTMLImageElement`. |
+| `AddEventListener()` | Add event listener and returns `HTMLElement`. |
