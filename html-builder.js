@@ -62,6 +62,11 @@
                 return this;
             }
 
+            HTMLElement.prototype.SetProps = function(...props)
+            {
+                //TODO
+            }
+
             HTMLImageElement.prototype.SetSrc = function(url)
             {
                 this.setAttribute('src', url);
