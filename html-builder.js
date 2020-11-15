@@ -23,6 +23,12 @@
                 return this;
             }
 
+            HTMLElement.prototype.RemoveClassName = function(className)
+            {
+                this.classList.remove(className);
+                return this;
+            }
+
             HTMLElement.prototype.AddId = function(id)
             {
                 let result = id.trim();

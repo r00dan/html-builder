@@ -4,12 +4,13 @@
 Global variable `window.hb`.
 | Method | Description |
 | ------ | ------ |
-| `Create()` | Create HTML element. |
-| `Find()` | Find HTML element. |
-| `AddClassName()` | Add a bunch of class names to HTML element. |
-| `AddId()` | Add an id to HTML element. |
-| `AppendChilds()` | Append a bunch of HTML elements. |
-| `Fill()` | Fill HTML element with some text. |
-| `SetSrc()` | Set src attribute to `HTMLImageElement`. |
-| `SetSize()` | Set width and height to `HTMLImageElement`. |
-| `AddEventListener()` | Add event listener and returns `HTMLElement`. |
+| `Create(string)` | Create HTML element. |
+| `Find(string)` | Find HTML element. |
+| `AddClassName(string)` | Add a bunch of css classes to HTML element. |
+| `AddId(string)` | Add an id to HTML element. |
+| `AppendChilds(...childs)` | Append a bunch of HTML elements. |
+| `Fill(data)` | Fill HTML element with some text. |
+| `SetSrc(url)` | Set src attribute to `HTMLImageElement`. |
+| `SetSize(w, h)` | Set width and height to `HTMLImageElement`. |
+| `AddEventListener(eventType, callback)` | Add event listener and returns `HTMLElement`. |
+| `RemoveClassName(className)` | Removes css class and returns `HTMLElement`. |
