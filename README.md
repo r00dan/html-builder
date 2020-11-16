@@ -13,4 +13,4 @@ Global variable `window.hb`.
 | `SetSrc(url)` | Set src attribute to `HTMLImageElement`. |
 | `SetSize(w, h)` | Set width and height to `HTMLImageElement`. |
 | `AddEventListener(eventType, callback)` | Add event listener and returns `HTMLElement`. |
-| `RemoveClassName(className)` | Removes css class and returns `HTMLElement`. |
+| `RemoveClassName(className)` | Remove css class and returns `HTMLElement`. |
