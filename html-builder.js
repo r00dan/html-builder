@@ -31,8 +31,7 @@
 
             HTMLElement.prototype.AddId = function(id)
             {
-                let result = id.trim();
-                this.id = result;
+                this.id = id;
                 return this;
             }
 
