@@ -84,6 +84,18 @@
                 if (h) this.height = h;
                 return this;
             }
+
+            HTMLImageElement.prototype.SetAlt = function (data)
+            {
+                this.setAttribute('alt', data);
+                return this;
+            }
+
+            HTMLElement.prototype.SetAttribute = function (attr_name, attr_data)
+            {
+                this.setAttribute(attr_name, attr_data);
+                return this;
+            }
         }
 
         Create(element)

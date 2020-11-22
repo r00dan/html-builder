@@ -14,3 +14,4 @@ Global variable `window.hb`.
 | `SetSize(w, h)` | Set width and height to `HTMLImageElement`. |
 | `AddEventListener(eventType, callback)` | Add event listener and returns `HTMLElement`. |
 | `RemoveClassName(className)` | Remove css class and returns `HTMLElement`. |
+| `SetAttribute(attr_name, attr_data)` | Set html attributes and returns `HTMLElement`. |
