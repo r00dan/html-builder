@@ -96,6 +96,12 @@
                 this.setAttribute(attr_name, attr_data);
                 return this;
             }
+
+            HTMLInputElement.prototype.SetValue = function (attr_data)
+            {
+                this.value = attr_data;
+                return this;
+            }
         }
 
         Create(element)
