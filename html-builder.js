@@ -102,6 +102,12 @@
                 this.value = attr_data;
                 return this;
             }
+
+            HTMLTextAreaElement.prototype.SetValue = function (attr_data)
+            {
+                this.value = attr_data;
+                return this;
+            }
         }
 
         Create(element)
