@@ -112,6 +112,7 @@
             HTMLElement.prototype.SetDisable = function (attr_bool)
             {
                 this.disabled = attr_bool;
+                return this;
             }
         }
 
