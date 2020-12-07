@@ -108,6 +108,11 @@
                 this.value = attr_data;
                 return this;
             }
+
+            HTMLElement.prototype.SetDisable = function (attr_bool)
+            {
+                this.disabled = attr_bool;
+            }
         }
 
         Create(element)
