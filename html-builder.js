@@ -119,7 +119,7 @@
             {
                 for (let i in attr_obj)
                 {
-                    this.style.i = attr_obj[i];
+                    this.style[i] = attr_obj[i];
                 }
    
                 return this;
