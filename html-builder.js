@@ -114,6 +114,16 @@
                 this.disabled = attr_bool;
                 return this;
             }
+
+            HTMLElement.prototype.SetStyles = function (attr_obj)
+            {
+                for (let i in attr_obj)
+                {
+                    this.style.i = attr_obj[i];
+                }
+   
+                return this;
+            }
         }
 
         Create(element)
